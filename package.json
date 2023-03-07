@@ -1,0 +1,12 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "sandbox",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Extracat",
+  "license": "ISC"
+}
