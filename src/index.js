@@ -1,14 +1,10 @@
-import _ from 'lodash';
-
-import md from "./index.md";
-
+import html from "./index.md";
+import "./style.scss";
 
 function component() {
   const element = document.createElement('div');
-
-  // Lodash, now imported by this script
-  element.innerHTML = md;
-
+  element.innerHTML = html;
+  element.className = "markdown-body"
   return element;
 }
 
