@@ -1,13 +1,7 @@
 ### Math
 
 $
-\displaystyle \begin{array}{ll}
-A(m,n) = \begin{cases}
-n+1  & {\text{if}}\ m=0 \\
-A(m-1,1) & {\text{if}}\ m>0\ {\text{and}}\ n=0 \\ 
-A(m-1,A(m,n-1)) & {\text{if}}\ m>0\ {\text{and}}\ n>0 \\
-\end{cases}
-\end{array}
+\displaystyle f'(x) = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - f(x)}{\Delta x} 
 $
 
 

@@ -1,6 +1,7 @@
-const path = require('path');
+const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
+const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
+const markdownKatexLoader = require.resolve('./markdown-katex-loader.js')
 
 
 // Override function
@@ -48,7 +49,7 @@ module.exports = {
             loader: "html-loader",
           },
           {
-            loader: "markdown-latex-loader",
+            loader: markdownKatexLoader,
             options: {
               // Pass options to marked
               // See https://marked.js.org/using_advanced#options
@@ -63,29 +64,36 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
           "style-loader",
-          // Translates CSS into CommonJS
           "css-loader",
-          // Compiles Sass to CSS
           "sass-loader",
         ],
       },
-
+/*
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-        use: {
-          loader: 'file-loader',
-          options:{
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
               name: '[name].[ext]',
-              limit: 4096,
-              mimetype: "application/font-woff",
-              outputPath: 'css/fonts/',
-              publicPath: './css/fonts/',  
+              outputPath: 'fonts/'
+            }
           }
+        ]
       },
+*/
+      {
+        test: /\.less$/i,
+        use: [
+          // compiles Less to CSS
+          "style-loader",
+          "css-loader",
+          "less-loader",
+        ],
       },
+
     ],
   },
 
