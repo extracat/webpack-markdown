@@ -1,4 +1,19 @@
-## Typographic replacements
+### Math
+
+$
+\displaystyle \begin{array}{ll}
+A(m,n) = \begin{cases}
+n+1  & {\text{if}}\ m=0 \\
+A(m-1,1) & {\text{if}}\ m>0\ {\text{and}}\ n=0 \\ 
+A(m-1,A(m,n-1)) & {\text{if}}\ m>0\ {\text{and}}\ n>0 \\
+\end{cases}
+\end{array}
+$
+
+
+
+
+### Typographic replacements!
 
 Enable typographer option to see result.
 
@@ -11,7 +26,7 @@ test.. test... test..... test?..... test!....
 "Smartypants, double quotes" and 'single quotes'
 
 
-## Emphasis
+### Emphasis
 
 **This is bold text**
 
@@ -23,44 +38,7 @@ _This is italic text_
 
 ~~Strikethrough~~
 
-
-## Blockquotes
-
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
-
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-
-## Code
+### Code
 
 Inline `code`
 
@@ -111,8 +89,7 @@ Right aligned columns
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
+Autoconverted link https://github.com/nodeca/pica 
 
 Like links, Images also have a footnote style syntax
 
@@ -123,7 +100,7 @@ With a reference later in the document defining the URL location:
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
 
-## Plugins
+### Plugins
 
 The killer feature of `markdown-it` is very effective support of
 [syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
@@ -209,3 +186,4 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
+

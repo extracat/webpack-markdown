@@ -687,6 +687,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"big.js@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "big.js@npm:5.2.2"
+  checksum: b89b6e8419b097a8fb4ed2399a1931a68c612bce3cfd5ca8c214b2d017531191070f990598de2fc6f3f993d91c0f08aa82697717f6b3b8732c9731866d233c9e
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -934,7 +941,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^2.20.0":
+"commander@npm:^2.19.0, commander@npm:^2.20.0":
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
   checksum: ab8c07884e42c3a8dbc5dd9592c606176c7eb5c1ca5ff274bcf907039b2c41de3626f684ea75ccf4d361ba004bbaff1f577d5384c155f3871e456bdf27becf9e
@@ -1258,6 +1265,13 @@ __metadata:
   version: 8.0.0
   resolution: "emoji-regex@npm:8.0.0"
   checksum: d4c5c39d5a9868b5fa152f00cada8a936868fd3367f33f71be515ecee4c803132d11b31a6222b2571b1e5f7e13890156a94880345594d0ce7e3c9895f560f192
+  languageName: node
+  linkType: hard
+
+"emojis-list@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "emojis-list@npm:3.0.0"
+  checksum: ddaaa02542e1e9436c03970eeed445f4ed29a5337dfba0fe0c38dfdd2af5da2429c2a0821304e8a8d1cadf27fdd5b22ff793571fa803ae16852a6975c65e8e70
   languageName: node
   linkType: hard
 
@@ -1787,6 +1801,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"html-webpack-harddisk-plugin@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "html-webpack-harddisk-plugin@npm:2.0.0"
+  peerDependencies:
+    html-webpack-plugin: ^5.0.0
+    webpack: ^5.0.0
+  checksum: 5f0b5b58adb86ba13e4842ae1b53b1c4cc555112207c349e6e0c2dbc2aa434aecb506046bf728b31f5e33a42d6914cfc2f33cee52befa8b159bd7f45e29a4202
+  languageName: node
+  linkType: hard
+
 "html-webpack-plugin@npm:^5.5.0":
   version: 5.5.0
   resolution: "html-webpack-plugin@npm:5.5.0"
@@ -2194,6 +2218,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json5@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "json5@npm:1.0.2"
+  dependencies:
+    minimist: ^1.2.0
+  bin:
+    json5: lib/cli.js
+  checksum: 866458a8c58a95a49bef3adba929c625e82532bcff1fe93f01d29cb02cac7c3fe1f4b79951b7792c2da9de0b32871a8401a6e3c5b36778ad852bf5b8a61165d7
+  languageName: node
+  linkType: hard
+
+"katex@npm:^0.10.0-beta":
+  version: 0.10.2
+  resolution: "katex@npm:0.10.2"
+  dependencies:
+    commander: ^2.19.0
+  bin:
+    katex: cli.js
+  checksum: 2cf491cd3ac04582d0fc3fe4746e5afb02bd0a5bd7cf176211ece3639cb0eb683edf98f80f090abe03ad908a6c1537166838d979504ffe99e98a23a9314bab9a
+  languageName: node
+  linkType: hard
+
 "kind-of@npm:^6.0.2":
   version: 6.0.3
   resolution: "kind-of@npm:6.0.3"
@@ -2212,6 +2258,17 @@ __metadata:
   version: 4.3.0
   resolution: "loader-runner@npm:4.3.0"
   checksum: a90e00dee9a16be118ea43fec3192d0b491fe03a32ed48a4132eb61d498f5536a03a1315531c19d284392a8726a4ecad71d82044c28d7f22ef62e029bf761569
+  languageName: node
+  linkType: hard
+
+"loader-utils@npm:^1.1.0":
+  version: 1.4.2
+  resolution: "loader-utils@npm:1.4.2"
+  dependencies:
+    big.js: ^5.2.2
+    emojis-list: ^3.0.0
+    json5: ^1.0.1
+  checksum: eb6fb622efc0ffd1abdf68a2022f9eac62bef8ec599cf8adb75e94d1d338381780be6278534170e99edc03380a6d29bc7eb1563c89ce17c5fed3a0b17f1ad804
   languageName: node
   linkType: hard
 
@@ -2280,6 +2337,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"markdown-latex-loader@npm:^0.0.0-alpha":
+  version: 0.0.0-alpha
+  resolution: "markdown-latex-loader@npm:0.0.0-alpha"
+  dependencies:
+    katex: ^0.10.0-beta
+    loader-utils: ^1.1.0
+    marked: ^0.4.0
+  peerDependencies:
+    katex: ^0.10.0-beta
+    marked: ^0.4.0
+  checksum: e6b68dc985ffb2d8861bd14454701eb43dca28452204358fb591a18499b01ed36610fa238bc09f2359a8a180783e43125a9128e7556f1e4463a1eeda32f79bbe
+  languageName: node
+  linkType: hard
+
 "markdown-loader@npm:^8.0.0":
   version: 8.0.0
   resolution: "markdown-loader@npm:8.0.0"
@@ -2288,6 +2359,15 @@ __metadata:
   peerDependencies:
     webpack: ^5.0.0
   checksum: c5f878a24afb80ba7fa1de098b50434393dc4ed3d7477f9d7f710c2f2dc9ddb7a93b6edeaaaaece54a2f16adf26a699d4bc4fb50c68edd4b6288f2dd53d4485c
+  languageName: node
+  linkType: hard
+
+"marked@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "marked@npm:0.4.0"
+  bin:
+    marked: ./bin/marked
+  checksum: 7f7f6dc7e9e2a8c645e1f80277e421cb31e476aa38799b02b646a19e206fb89111656df94a85bf8a6857273adc09706d09558bfe13ff9b13871219d2dad3fd6e
   languageName: node
   linkType: hard
 
@@ -2401,6 +2481,13 @@ __metadata:
   dependencies:
     brace-expansion: ^2.0.1
   checksum: 7564208ef81d7065a370f788d337cd80a689e981042cb9a1d0e6580b6c6a8c9279eba80010516e258835a988363f99f54a6f711a315089b8b42694f5da9d0d77
+  languageName: node
+  linkType: hard
+
+"minimist@npm:^1.2.0":
+  version: 1.2.8
+  resolution: "minimist@npm:1.2.8"
+  checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
   languageName: node
   linkType: hard
 
@@ -3167,7 +3254,9 @@ __metadata:
   dependencies:
     css-loader: ^6.7.3
     html-loader: ^4.2.0
+    html-webpack-harddisk-plugin: ^2.0.0
     html-webpack-plugin: ^5.5.0
+    markdown-latex-loader: ^0.0.0-alpha
     markdown-loader: ^8.0.0
     sass: ^1.59.2
     sass-loader: ^13.2.0
