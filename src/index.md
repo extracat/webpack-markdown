@@ -4,9 +4,6 @@ $
 \displaystyle f''(x) = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - f(x)}{\Delta x} 
 $
 
-
-
-
 ### Typographic replacements!
 
 Enable typographer option to see result.
