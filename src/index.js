@@ -1,5 +1,6 @@
 import html from "./index.md";
 import "./style.scss";
+import "./fonts.scss";
 
 function component() {
   const element = document.createElement('div');

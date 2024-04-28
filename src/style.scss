@@ -1,4 +1,4 @@
-/*
+
 @media (prefers-color-scheme: dark) {
   .markdown-body {
     color-scheme: dark;
@@ -96,7 +96,6 @@
   }
 }
 
-*/
 
 .markdown-body {
   color-scheme: light;
@@ -288,6 +287,7 @@
 .markdown-body [type=button],
 .markdown-body [type=reset],
 .markdown-body [type=submit] {
+  appearance: button;
   -webkit-appearance: button;
 }
 
