@@ -1,4 +1,4 @@
-### Mathematics
+# Mathematics
 
 $
 \displaystyle f''(x) = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - f(x)}{\Delta x} 
